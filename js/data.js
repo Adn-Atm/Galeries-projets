@@ -125,6 +125,17 @@ const PORTFOLIO_DATA = {
       ],
       link: "",
     },
+      {
+      title: "Essaie de Développement d’une interface PC et HMI pour le pilotage d’une colonne de décarbonatation",
+      description:
+        "Conception d’un système intégré de supervision et de contrôle d’une colonne de décarbonatation pour l’adoucissement de l’eau, incluant acquisition de données en temps réel, pilotage d’actionneurs et analyse des performances du procédé.",
+      tags: [],
+      files: [
+        { name: "interface PC", path: "interface PC.py" },
+        { name: "HMI ecran", path: "HMI ecran.HMI" },
+      ],
+      link: "",
+    },
   ],
 
   // ------------------------------------------------------------
