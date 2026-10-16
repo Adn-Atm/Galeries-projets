@@ -125,6 +125,18 @@ const PORTFOLIO_DATA = {
       ],
       link: "",
     },
+    {
+      title: "Essaie d'explication des 16h de repos du blé apres conditionement",
+      description:
+        "Modélisation du phenomene par un model simplifié qui à été utilisé comme source alimentant le DOE par plan Box-Bekhnen ayant 3 facteurs chacun a 3 niveau et avec l'humidité à instant t commme réponse. ce traibaille a été effectué dù au fait d'indiponibilité de materiel d'experimentation laboratoire",
+      tags: [],
+      files: [
+        { name: "DOE BBD", path: "DOE BBD.xlsx" },
+        { name: "Modele calculateur", path: "Modele calculateur.xlsm" },
+        { name: "Model et DOE", path: "Model et DOE.pdf" }
+      ],
+      link: "",
+    },
   ],
 
   // ------------------------------------------------------------
