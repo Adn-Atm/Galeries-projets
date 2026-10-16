@@ -107,7 +107,7 @@
   document.getElementById("hero-lastname").textContent = d.site.lastName;
   document.getElementById("hero-title").textContent = d.site.title;
   document.getElementById("hero-bio").textContent = d.hero.bio;
-  document.getElementById("hero-tagline").textContent = d.site.tagline;
+  document.getElementById("hero-tagline").textContent = d.site.tagline || "";
 
   const tagsContainer = document.getElementById("hero-tags");
   d.hero.tags.forEach((tag) => {
@@ -338,7 +338,15 @@
   /* ---------- 8. Footer ---------- */
   document.getElementById("footer-name").textContent = `${d.site.firstName} ${d.site.lastName}`;
   document.getElementById("footer-year").textContent = currentYear;
-  document.getElementById("footer-email").href = `mailto:${d.site.email}`;
+  // Chaque lien du footer est optionnel : s'il n'existe pas dans index.html
+  // ou n'a pas d'URL dans data.js, on l'ignore au lieu de planter le script.
+  const setHref = (id, url) => {
+    const node = document.getElementById(id);
+    if (node && url) node.href = url;
+  };
+  setHref("footer-linkedin", d.site.linkedin);
+  setHref("footer-github", d.site.github);
+  setHref("footer-email", `mailto:${d.site.email}`);
 
   /* ---------- 9. Scroll spy (navbar active + glass on scroll) ---------- */
   const header = document.getElementById("site-header");
