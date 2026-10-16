@@ -112,7 +112,7 @@ const PORTFOLIO_DATA = {
         { name: "PID-300 Mouture", path: "PID-300 Mouture.pdf" },
         { name: "PID-400 Stockage Produit Fini", path: "PID-400 Stockage Produit Fini.pdf" }
       ],
-      link: "https://github.com/Adn-Atm/Essaie-interface-scada.git",
+      link: "",
     },
     {
       title: "Formulation d'une proposition d'augmentation de capacité analytique du laboratoire de la minoterie avec estimation budgétaire",
