@@ -126,14 +126,13 @@ const PORTFOLIO_DATA = {
       link: "",
     },
     {
-      title: "Essaie d'explication des 16h de repos du blé apres conditionement",
+      title: "Essaie de Développement d’une interface PC et HMI pour le pilotage d’une colonne de décarbonatation",
       description:
-        "Modélisation du phenomene par un model simplifié qui à été utilisé comme source alimentant le DOE par plan Box-Bekhnen ayant 3 facteurs chacun a 3 niveau et avec l'humidité à instant t commme réponse. ce traibaille a été effectué dù au fait d'indiponibilité de materiel d'experimentation laboratoire",
+        "Conception d’un système intégré de supervision et de contrôle d’une colonne de décarbonatation pour l’adoucissement de l’eau, incluant acquisition de données en temps réel, pilotage d’actionneurs et analyse des performances du procédé.",
       tags: [],
       files: [
-        { name: "DOE BBD", path: "DOE BBD.xlsx" },
-        { name: "Modele calculateur", path: "Modele calculateur.xlsm" },
-        { name: "Model et DOE", path: "Model et DOE.pdf" }
+        { name: "interface PC", path: "interface PC.py" },
+        { name: "HMI ecran", path: "HMI ecran.HMI" },
       ],
       link: "",
     },
