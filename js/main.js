@@ -338,8 +338,6 @@
   /* ---------- 8. Footer ---------- */
   document.getElementById("footer-name").textContent = `${d.site.firstName} ${d.site.lastName}`;
   document.getElementById("footer-year").textContent = currentYear;
-  document.getElementById("footer-linkedin").href = d.site.linkedin;
-  document.getElementById("footer-github").href = d.site.github;
   document.getElementById("footer-email").href = `mailto:${d.site.email}`;
 
   /* ---------- 9. Scroll spy (navbar active + glass on scroll) ---------- */
