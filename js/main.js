@@ -45,7 +45,7 @@
   const navbarBrand = document.getElementById("navbar-brand");
   navbarBrand.innerHTML = `<span class="brand-name">${escapeHtml(
     d.site.firstName
-  )}</span> <span class="brand-sep">— ${escapeHtml(
+  )}</span> <span class="brand-sep">- ${escapeHtml(
     d.site.title.split(" ").slice(-2).join(" ")
   )}</span>`;
 
