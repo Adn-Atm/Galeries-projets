@@ -25,7 +25,7 @@
     }[c]));
 
   /* ---------- 1. Métadonnées de page ---------- */
-  document.title = `${d.site.firstName} ${d.site.lastName} — ${d.site.title}`;
+  document.title = `${d.site.firstName} ${d.site.lastName}-${d.site.title}`;
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) {
     metaDesc.setAttribute(
