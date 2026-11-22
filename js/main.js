@@ -25,7 +25,7 @@
     }[c]));
 
   /* ---------- 1. Métadonnées de page ---------- */
-  document.title = `${d.site.firstName} ${d.site.lastName}-${d.site.title}`;
+  document.title = `${d.site.firstName} ${d.site.lastName} - ${d.site.title}`;
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) {
     metaDesc.setAttribute(
@@ -136,10 +136,14 @@
         //   { name: "fichier.pdf", label: "Libellé affiché" }
         const fileName = f.path || f.name;
         const displayLabel = f.path ? (f.name || fileName) : (f.label || f.name);
-        const href = `projects/${encodeURIComponent(fileName)}`;
+        const isPdf = /\.pdf$/i.test(fileName);
+        // PDF : on masque la barre d'outils du lecteur (bouton télécharger inclus)
+        const href = `projects/${encodeURIComponent(fileName)}${
+          isPdf ? "#toolbar=0&navpanes=0" : ""
+        }`;
         return `
-        <a class="resource-chip" href="${href}" download>
-          ${ICON_DOWNLOAD}<span>${escapeHtml(displayLabel)}</span>
+        <a class="resource-chip" href="${href}" target="_blank" rel="noopener noreferrer">
+          ${ICON_EYE}<span>${escapeHtml(displayLabel)}</span>
         </a>`;
       }),
       ...(hasLink
@@ -415,3 +419,4 @@
     shapesContainer.appendChild(shape);
   });
 })();
+
